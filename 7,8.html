@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <title>Pragraphs,Headlines,Small texts,Subscripts & Superscripts</title>  
+  <style>
+    *{
+    color:green;
+}
+
+p{
+    color: red !important; 
+}
+
+p{
+    /* This will be preffered */
+    color: blueviolet;
+    font-size:20px;
+}
+
+.para{
+    color: black;
+}
+
+#para{
+    color: purple;
+}
+
+header p{
+    color:royalblue !important;
+}
+
+/* Child Selector */
+header > p {
+    background-color:cornsilk;
+}
+
+/* adjacent sibling selector */
+
+header+p{
+    font-style:italic;
+}
+
+/* general sibling selector */
+
+header ~ p{
+    background-color: darkgoldenrod;
+    color:#fff;
+}
+  </style>
+</head>
+<body>
+    <header>
+        <p class="para" id="para">
+            Hello Everyone!
+        </p>
+    </header>
+    <p>This is us</p>
+    <p>This is us</p>
+    <p>This is us</p>
+    <p>This is us</p>
+    <main>
+        <article>
+
+        </article>
+        <aside>
+
+        </aside>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

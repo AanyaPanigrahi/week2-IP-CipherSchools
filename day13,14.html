@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="acc.css" />
+  <!-- <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> -->
+  <title>Accordian Panel</title>
+  <style>*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* font-style: italic;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: sRoboto; */
+    font: italic normal bold 16px/1.5 sRoboto;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    text-decoration: underline;
+    text-align: left;
+}
+
+.accordian{
+    margin:20px;
+}
+
+.accordian .panel{
+    padding: 20px;
+    border: 1px solid #333;
+}
+
+.accordian .panel label{
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    font-weight: bold;
+}
+
+.accordian .panel label::before{
+    content:"";
+    position: absolute;
+    top: 12px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #333;
+}
+
+.accordian .panel .box{
+    display: none;
+}
+
+.accordian .panel input:checked ~ label{
+    color: purple;
+}
+
+.accordian .panel input:checked ~ label::before{
+    transform: rotate(90 deg);
+}
+
+.accordian .panel input:checked ~ .box{
+    display: block;
+    padding: 0px 20px 10px 20px;
+}</style>
+</head>
+<body>
+    <div class="accordian">
+        <div class="panel">
+            <label for="one-panel">Accordian One</label>
+            <input type="radio" name="one-panel" id="one-panel">
+            <div class="box">
+                <p>
+                    A series of sentences that are organized and coherent, and are all related to a single topic is called Paragraph. 
+                    Breaking the large sentence essay or topic into smaller pieces in a well-structured form is known as Paragraph. The lines
+                    that should include in a paragraph is at least three to five, not more. 
+                </p>
+            </div>
+        </div>
+    
+        <div class="panel">
+            <label for="one-panel">Accordian Two</label>
+            <input type="radio" name="one-panel" id="one-panel">
+            <div class="box">
+                <p>
+                    A series of sentences that are organized and coherent, and are all related to a single topic is called Paragraph. 
+                    Breaking the large sentence essay or topic into smaller pieces in a well-structured form is known as Paragraph. The lines
+                    that should include in a paragraph is at least three to five, not more.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

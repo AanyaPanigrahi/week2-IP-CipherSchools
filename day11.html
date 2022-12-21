@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+
+  <title>Pseudo elements</title>
+  <style>
+    p::after{
+    content: "This is the para.";
+}
+
+p::before{
+    content: "This is the para."
+}
+
+p::first-letter{
+    background-color: red;
+}
+
+p::first-line{
+    color: royalblue;
+}
+
+p::selection{
+    background-color: salmon;
+    color: #fff;
+}
+
+li::marker{
+    color: seagreen;
+    font-size: 30px;
+}
+
+input[type="text"]::placeholder{
+    color: #fff;
+    background-color: slategrey;
+}
+  </style>
+</head>
+<body>
+    
+    <p>
+        A series of sentences that are organized and coherent, and are all related to a single topic is called Paragraph. 
+        Breaking the large sentence essay or topic into smaller pieces in a well-structured form is known as Paragraph. The lines
+         that should include in a paragraph is at least three to five, not more. It includes topic sentences, supporting sentences
+        as well as concluding sentences that refer to an overall structure, which is a group of sentences focusing on a single topic.
+        Paragraph writing is not just expressing your views about the topic in a group of sentences. It is all about structuring ideas
+        in a clear format to make the reader fall in love with the topic and continue their studying till to an end of the topic. While 
+        writing paragraphs about any topic, it's more important to maintain the quality and flow of the paragraph than word count.
+        Paragraphs are often thought of as a 'unit' of thought.Therefore, start learning how to write a good paragraph and impress your audience
+        with your experience about the topic. From this page, you will come to know how to write, what to focus while writing paragraphs in a 
+        format, type of paragraphs, and some of the topics on Paragraph writing.
+    </p>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+    <input type="text" placeholder="Enter the text">
+    
+</body>
+</html>

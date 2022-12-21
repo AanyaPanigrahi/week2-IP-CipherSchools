@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>CSS keyframes</title>
+  <style> 
+  div{
+    padding: 20px;
+}
+
+div img{
+    animation: slide 0.5s forwards;
+    transform: translateY(300px) scale(1.1);
+    opacity: 0;
+}
+
+@keyframes slide{
+    to{
+        opacity:1;
+        transform:none;
+    }
+}
+/* Footer
+© 2022 GitHub, Inc. */
+</style>
+</head>
+<body>
+    <div>
+        <h1>A paragraph is aseries of related sentences.</h1>
+    <img width="200px" src="https://www.w3schools.com/html/img_car.jpg" alt="">
+    </div>
+</body>
+</html>

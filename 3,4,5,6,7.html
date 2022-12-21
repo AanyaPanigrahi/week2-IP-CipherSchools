@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <title>Pragraphs,Headlines,Small texts,Subscripts & Superscripts</title>
+  <style> 
+  /* universal selector */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    color:#2f8aa9;
+}
+
+/* Type Element or Tag selector */
+strong {
+    font-size:20px;
+}
+
+/*This is paragraph styling*/
+p{
+    color:inherit;
+    background-color:rgba(0,0,0,0.8);
+    /* absolute units */
+    width:20px; 
+    /* relative units */
+    width: 70vw;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* p{color:blue;background-color:bisque;} we can write this as well but it is not readable */
+
+/* Type Element or Tag selector */
+div{
+    /* function values */
+     transform: rotate(0deg); 
+    width: calc(80%-20px);
+    background-image: url('data:image/jpeg;base64,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');
+
+}
+
+/* a shortened property */
+/* grouping slector */
+h1,h2,h3,h4,h5,h6{
+    color:#000;
+}
+
+/* class selector */
+.heading{
+    background-color:aliceblue;
+}
+
+/* id selector */
+#id{
+    font-size:30px;
+}
+
+/* Desendant selector */
+.div p{
+    font-size: 50px;
+}
+
+/* combining selector */
+.div .container{
+    font-style:italic;
+}
+
+/* color values */
+/* rgb(red,green,blue) */
+/* rgba(red,green,blue,alpha) */
+/* hsl(hue(write degrees),saturation(write percentage),lightness(write percentage)) */
+/* hsla(hue,saturation,lightness,alpha) */
+
+/* website to find colors:coolors.co and css-tricks.com */
+</style>
+</head>
+<body>
+    <div class="div container">
+      <i><p id="one">Hello Everyone</p></i>
+      <em><h1>Welcome to my website</h1></em>
+      <h2>Welcome to my website</h2>
+      <h3 class="heading">Welcome to my website</h3>
+      <h4>Welcome to my website</h4>
+      <h5>Welcome to my website</h5>
+      <h6>Welcome to my website</h6>
+
+    </div>
+    <!--Subscripts-->
+    <p>
+       <b>H<sub>2</sub>O</b> 
+    </p>
+
+    <!--Superscripts-->
+    <strong><p>3<sup>2</sup></p></strong>
+
+    <small>All rights reserved &copy; 2022</small>
+</body>
+</html>

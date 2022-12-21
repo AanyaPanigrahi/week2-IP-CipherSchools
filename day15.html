@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>CSS Floats</title>
+  <style>
+    .container{
+    width:200px;
+    height:200px;
+    margin:auto;
+    overflow:auto;
+    border:1px solid #333;
+    padding:5px;
+}
+
+.container img{
+    float:left;
+}
+
+p{
+    float:left;
+}
+
+.container .para{
+    clear:both;
+}
+  </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2aop0UlU4Ep-ZIqTWYaqAx5kNMKREd0pOB-eaDYI8&s" alt="" width="100px">
+        <p>
+            A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic.
+            Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. 
+        </p>
+
+        <p class="para">
+            Paragraphs add one idea at a time to your broader argument.
+        </p>
+    </div>
+</body>
+</html>

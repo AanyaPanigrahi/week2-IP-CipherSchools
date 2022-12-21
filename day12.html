@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <title>CSS Box Model</title>
+  <style>
+    .box div{
+    display: inline-block;
+    background-color: steelblue;
+}
+
+.box span{
+    display: block;
+}
+
+.box{
+    background-color: tan;
+    width: 300px;
+    height: 300px;
+    /* for the space inside the block */
+    /* padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    padding-reight: 20px */
+
+    /* same all the sides */
+    padding: 10px;
+    /* top,bottom & right,left */
+    padding: 20px 10px;
+    /* top & right,left & bootom  */
+    padding: 20px 20px;
+    /* top,right,bottom left */
+    padding: 20px 50px 20px 50px;
+
+    /* places a border outside a block */
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: #333; */
+
+    /* shorthand */
+    border: 2px solid #333;
+
+    /* spaces around the block */
+    /* margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-right: 40px; */
+
+    /* margin shorthand */
+    /* same all the sides */
+    /* margin: 10px; */
+    /* top,bottom & right,left */
+    /* margin: 20px 10px; */
+    /* top & right,left & bootom  */
+    /* margin: 20px 20px; */
+    /* top,right,bottom left */
+    /* margin: 20px 50px 20px 50px; */
+
+    /* centered  block */
+    margin: auto;
+}
+  </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div>This is the first paragraph</div>
+        <div>This is the first paragraph</div>
+        <span>This is the second paragraph</span>
+        <span>This is the third paragraph</span>
+    </div>
+    <div>
+
+    </div>
+    
+</body>
+</html>
